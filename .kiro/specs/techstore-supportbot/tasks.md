@@ -138,14 +138,14 @@ Implementação incremental seguindo Clean Architecture em Python 3.11+. As tare
   - [ ] 9.2 Criar `src/api/dependencies.py` com função de wiring que instancia `InMemoryFAQRepository`, `InMemoryTicketRepository`, `IntentClassifier` e `MessageHandler` via `fastapi.Depends`
     - _Requisitos: 6.1_
 
-  - [ ] 9.3 Criar `src/api/handlers/message_handler.py` com rota `POST /message`
+  - [ ] 9.3 Criar `src/api/handlers/message_handler.py` com rota `POST /messages`
     - Valida corpo da requisição (Pydantic levanta 422; tratar como 400 com JSON `{"error": "..."}`)
     - Chama `MessageHandler.handle(text, state=None)`
     - Retorna HTTP 200 com `{"response": "..."}` para requisições válidas
     - Retorna HTTP 400 com `{"error": "..."}` para corpo ausente/malformado ou `text` vazio
     - _Requisitos: 6.1, 6.2, 6.3, 6.4_
 
-  - [ ] 9.4 Criar `src/api/app.py` com instância FastAPI e registro da rota `/message`
+  - [ ] 9.4 Criar `src/api/app.py` com instância FastAPI e registro da rota `/messages`
     - _Requisitos: 6.1_
 
   - [ ]* 9.5 Escrever teste de propriedade P11 — requisições válidas retornam HTTP 200
@@ -160,7 +160,6 @@ Implementação incremental seguindo Clean Architecture em Python 3.11+. As tare
 
   - [ ]* 9.7 Escrever testes de integração para o endpoint
     - Smoke test: POST com mensagem válida → 200; POST sem corpo → 400
-    - _Requisitos: 6.1, 6.2, 6.3_
 
 - [ ] 10. Checkpoint final — Garantir que todos os testes passam
   - Executar `pytest` e verificar que todos os testes (unitários, de propriedade e de integração) passam. Perguntar ao usuário se houver dúvidas.

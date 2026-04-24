@@ -53,7 +53,7 @@ pytest
 
 ## Uso da API
 
-**POST /message**
+**POST /messages**
 
 ```json
 // Request
