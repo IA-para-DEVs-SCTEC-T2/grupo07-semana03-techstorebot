@@ -1,16 +1,16 @@
 # Tech Stack
 
-## Linguagem de Desenvolvimento
+## Development Language
 
-- **Python** — linguagem principal do projeto
+- **Python** — the project's primary language
 
-### Versão
+### Version
 
 - Python 3.11+
 
-### Justificativa
+### Rationale
 
-- Ecossistema rico para desenvolvimento backend e scripts de automação
-- Ampla disponibilidade de bibliotecas e frameworks
-- Facilidade de manutenção e legibilidade do código
-- Suporte nativo a tipagem estática com `typing` e `mypy`
+- Rich ecosystem for backend development and automation scripts
+- Wide availability of libraries and frameworks
+- Ease of maintenance and code readability
+- Native support for static typing with `typing` and `mypy`
